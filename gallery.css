@@ -161,6 +161,12 @@ footer a {
 
   .hero-section .content {
     text-align: center;
+    
+  }
+
+  .hero-section .content img{
+    width: 20%;
+    height: 20%;
   }
 
 }
