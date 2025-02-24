@@ -71,12 +71,19 @@ header .navbar {
 .serviceContainer{
   width: 100%;
   background: rgba(255, 255, 255, 0.515);
-  gap: 10px;
   border-bottom: 1px solid rgb(247, 25, 206);
   border-radius: 8px;
-  margin: 10px;
+  margin: 20px;
   padding: 0px 10px;
-
+}
+.serviceContainer:hover{
+  transform: scaleY(1.1);
+}
+.priceTime{
+  display: flex;
+  justify-content: space-between;
+  color: rgb(247, 119, 140);
+  font-size: 15px;
 }
 /*Navbar*/
 
@@ -108,6 +115,7 @@ footer a {
     text-decoration: none;
     color: rgb(214, 16, 16);
 }
+
 @media (max-width: 768px) {
   header {
     padding: 10px;
@@ -155,17 +163,7 @@ footer a {
   .hero-section .content {
     text-align: center;
   }
-
-  .hero-section .content :is(h2, p) {
-    max-width: 100%;
-  }
-
-  .hero-section .content h2 {
-    font-size: 2.3rem;
-    line-height: 60px;
-  }
-  
-  .hero-section .content button {
-    padding: 9px 18px;
+  .hero-section .content .serviceContainer{
+    margin: 5px;
   }
 }
