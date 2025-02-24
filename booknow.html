@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nail'd It!</title>
-    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="booknow.css">
     <!-- Google Fonts Links For Icon -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
   </head>
@@ -26,17 +26,31 @@
 
     <section class="hero-section">
       <div class="content">
-        <h2>Our Gallery</h2>
-        <div class="gallery1">
-            <img src="images/gallery (1).jpg"  alt="Gallery Images">
-            <img src="images/gallery (2).jpg" width="200" height="200" alt="Gallery Images">
-            <img src="images/gallery (3).jpg"  alt="Gallery Images">
-        </div>
-        <div class="gallery2">
-            <img src="images/gallery (4).jpg" alt="Gallery Images">
-            <img src="images/gallery (5).jpg" alt="Gallery Images">
-            <img src="images/gallery (6).jpg"  alt="Gallery Images">
-        </div>
+        <h2>Book Now</h2>
+        <form>
+            <label for="service">Select Service:</label>
+            <select id="service" name="service" required>
+                <option value="" disabled selected>Choose a service</option>
+                <option value="Consultation">Basic Manicure</option>
+                <option value="Haircut">Gel Manicure</option>
+                <option value="Massage">Deluxe Pedicure</option>
+                <option value="Photography">Nail Art</option>
+            </select>
+            
+            <label for="servicesType">Preferred Date </label>
+            <input type="date" id="date" name="date"  required>
+
+            <label for="servicesType">Preferred Time </label>
+            <input type="time" id="time" name="time"  required>
+
+            <label for="servicesType">Name </label>
+            <input type="text" id="name" name="name" placeholder="Enter your Name..." required>
+
+            <label for="servicesType">Contact Number </label>
+            <input type="text" id="contact" name="contact" placeholder="Enter your Contact Number"  required>
+
+            <button class="bookNowButton" type="submit">Book Now</button>
+        </form>
       </div>
     </section>
 
