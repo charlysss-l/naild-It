@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="service.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <a class="logo" href="#">Nail'd It<span>!</span></a>
+          <ul class="menu-links">
+            <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Book Now</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+        </nav>
+      </header>
+
+    <section class="hero-section">
+        <div class="serviceContainer">
+            <h2 class="serviceName">Basic Manicure</h2>
+            <p class="details">Nail shaping, cuticle care, and polish application</p>
+
+            <div class="priceTime">
+                <div class="price">300</div>
+                <div class="time">45 mins</div>
+            </div>
+        </div>
+        <div class="serviceContainer">
+            <h2 class="serviceName">Gel Manicure</h2>
+            <p class="details">Long-lasting gel polish with nail care</p>
+
+            <div class="priceTime">
+                <div class="price">450</div>
+                <div class="time">60 mins</div>
+            </div>
+        </div>
+        <div class="serviceContainer">
+            <h2 class="serviceName">Deluxe Pedicure</h2>
+            <p class="details">Complete foot care with massage and polish</p>
+
+            <div class="priceTime">
+                <div class="price">550</div>
+                <div class="time">75 mins</div>
+            </div>
+        </div>
+        <div class="serviceContainer">
+            <h2 class="serviceName">Nail Art</h2>
+            <p class="details">Custom designs and artistic nail decoration</p>
+
+            <div class="priceTime">
+                <div class="price">from 150</div>
+                <div class="time">30+ mins</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        made by <a href="https://github.com/charlysss-l">Charlize Mikaela Nadela</a> 2025
+    </footer>
+
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+</body>
+</html>
