@@ -52,7 +52,7 @@ header .navbar {
   border-bottom: 1px solid rgba(255, 255, 255, 0.137);
 }
 
-/*Home*/
+/*Hero Section*/
 .hero-section {
   height: 100vh;
   background-image: url("images/nailService.jpg");
@@ -60,48 +60,25 @@ header .navbar {
   background-size: cover;
   display: flex;
   align-items: center;
-  padding: 0 20px;
+  padding: 0px 20px;
 }
-
 .hero-section .content {
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
- 
 }
 
-.hero-section .content h2 {
-  font-size: 3rem;
-  max-width: 600px;
-  line-height: 70px;
-  color: rgb(249, 142, 160);
-   text-shadow: 2px 2px black;
-}
+.serviceContainer{
+  width: 100%;
+  background: rgba(255, 255, 255, 0.515);
+  gap: 10px;
+  border-bottom: 1px solid rgb(247, 25, 206);
+  border-radius: 8px;
+  margin: 10px;
+  padding: 0px 10px;
 
-.hero-section .content p {
-  font-weight: 300;
-  max-width: 600px;
-  margin-top: 15px;
-  color: white;
 }
-
-.hero-section .content button {
-  background:rgb(249, 142, 160);
-  color: white;
-  padding: 12px 30px;
-  border: none;
-  font-size: 1rem;
-  border-radius: 6px;
-  margin-top: 38px;
-  cursor: pointer;
-  font-weight: 500;
-  transition: 0.2s ease;
-}
-
-.hero-section .content button:hover {
-  color: #fff;
-  background:rgb(210, 121, 136);
-}
+/*Navbar*/
 
 #close-menu-btn {
   position: absolute;
